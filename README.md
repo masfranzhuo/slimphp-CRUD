@@ -51,8 +51,7 @@ $container['db'] = function ($container) {
 };
 ```
 
-Also don't forget to initialize Eloquent on index.php file
-Initialize Eloquent on 'public/index.php'
+Also don't forget to initialize Eloquent on 'public/index.php'
 ```
 $app->getContainer()->get("db");
 ```
@@ -70,6 +69,7 @@ CREATE TABLE IF NOT EXISTS `books` (
 
 ## Model
 Create 'models' folder on the root path and put schema file there. After that initialiaze model file path on index.php file.
+
 Register model on 'public/index.php'
 ```
 require '/../Models/Book.php';
@@ -77,6 +77,7 @@ require '/../Models/Book.php';
 
 ## Route
 Create 'routes' folder on the root path and put route file there. After that initialiaze route file path on index.php file.
+
 Register routes by model on 'public/index.php'
 ```
 require __DIR__ . '/../routes/books.php';
